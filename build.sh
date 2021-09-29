@@ -85,7 +85,7 @@ install_requirements() {
     echo 'export PATH=$PATH:$HOME/bin' >> ~/.bash_profile
 
     echo -e "\e[32mInstalling eksctl\e[0m"
-    curl --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp" | tar xz -C /tmp
+    curl --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
     sudo mv /tmp/eksctl /usr/local/bin
 
     echo -e "\e[32mInstalling docker-compose\e[0m"
